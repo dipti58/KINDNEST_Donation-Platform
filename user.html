@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>User Dashboard | KINDNEST</title>
+  <link rel="stylesheet" href="./user.css"> 
+</head>
+<body>
+  <header>
+    <div class="left"><span id="username">User</span></div>
+    <div class="right"><button id="logoutBtn">Logout</button></div>
+  </header>
+
+  <main>
+    <section class="quote-section" >
+      <h2 id="quoteText">Loading quote...</h2>
+    </section>
+
+    <section class="nav-buttons">
+      <button onclick="scrollToSection('donate')">Donate</button>
+      <button onclick="scrollToSection('history')">Donation History</button>
+      <button onclick="scrollToSection('contact')">Contact Admin</button>
+    </section>
+
+    <section id="donate" class="content-section">
+      <h3>Make a Donation</h3>
+    
+      <div class="donate-options">
+        <button onclick="showForm('food')">Donate Food</button>
+        <button onclick="showForm('clothes')">Donate Clothes</button>
+        <button onclick="showForm('money')">Donate Money</button>
+      </div>
+    
+      <div id="foodForm" class="donation-form" style="display: none;">
+        <h4>Food Donation</h4>
+        <form onsubmit="submitDonation(event, 'Food')">
+          <label>Food Item: <input type="text" name="item" required></label>
+          <label>Quantity: <input type="text" name="quantity" required></label>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    
+      <div id="clothesForm" class="donation-form" style="display: none;">
+        <h4>Clothes Donation</h4>
+        <form onsubmit="submitDonation(event, 'Clothes')">
+          <label>Clothing Type: <input type="text" name="item" required></label>
+          <label>Size/Count: <input type="text" name="quantity" required></label>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    
+      <div id="moneyForm" class="donation-form" style="display: none;">
+        <h4>Money Donation</h4>
+        <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_QPWohFrVkON4db" async> </script> </form>
+      </div>
+    </section>
+
+    <section id="history" class="content-section">
+      <h3>Your Donation History</h3>
+      <!-- History details go here -->
+    </section>
+
+    <section id="contact" class="content-section">
+      <h3>Contact Admin</h3>
+      <!-- Contact form goes here -->
+    </section>
+  </main>
+<script src="./user.js"></script>
+</body>
+</html>
