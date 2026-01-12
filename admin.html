@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <header>
+    <h2>Welcome, Admin</h2>
+    <button onclick="logout()">Logout</button>
+  </header>
+
+  <section class="quote">
+    <p>“Helping others is the rent we pay for living on this planet.”</p>
+  </section>
+
+  <main>
+    <div class="search-bar">
+      <input type="text" id="searchName" placeholder="Search by donor name">
+      <button onclick="searchDonations()">Search</button>
+    </div>
+
+    <section id="donations" class="section">
+      <h3>All Donations</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Donor</th>
+            <th>Type</th>
+            <th>Details</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody id="donationList"></tbody>
+      </table>
+    </section>
+
+    <section id="messages">
+      <h3>User Messages</h3>
+      <ul id="messageList"></ul>
+    </section>
+  </main>
+
+  <script src="admin.js"></script>
+</body>
+</html>
