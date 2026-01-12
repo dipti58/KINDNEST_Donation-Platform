@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KINDNEST | Donation Platform</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">
+        <a href="index.html"><img src="/frontend/assets/logo.jpeg" width="45"></a>
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="auth-buttons">
+      <a href="login.html" class="btn">Login</a>
+      <a href="register.html" class="btn">Register</a>
+    </div>
+     <div class="menu-toggle" id="menu-toggle">
+        <i class="fas fa-bars"></i>    
+        <!-- <i class="fas fa-times"></i>   -->
+     </div>
+  </nav>
+
+  <section class="home" id="home">
+    <!-- <h1>Welcome to KINDNEST</h1>      -->
+    <div class="main_content">
+        <h2>“TO FEED , WE NEED.”
+            <br>
+            <span>YOUR OLD THINGS ENRICH OTHER LIVES</span>
+        </h2>
+        <p>Donate Food, Clothes, and Money to those in need.</p>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container about-container">
+      
+      <!-- Left side: Text -->
+      <div class="about-text">
+        <h2>About KINDNEST</h2>
+        <p>KINDNEST is a digital donation platform bridging the gap between donors and those in need. <br>
+           Our mission is to simplify acts of kindness — whether it's donating food, clothes, or financial help,
+           we ensure it reaches the right hands securely and efficiently.</p>
+        <p>Join us in building a world where generosity flows effortlessly!</p>
+      </div>
+      
+      <!-- Right side: Slideshow -->
+      <div class="about-slideshow">
+        <div class="slides">
+          <img src="/frontend/assets/ch.webp" alt="Kindness 1" class="slide active">
+          <img src="/frontend/assets/2.webp" alt="Kindness 2" class="slide">
+          <img src="/frontend/assets/v.jpeg" alt="Kindness 3" class="slide">
+        </div>
+        <div class="dots" id="dots"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="features" class="features-section">
+    <div class="container">
+      <h2>Our Key Features</h2>
+      <div class="features-grid">
+        <div class="feature-item">
+          <i class="fas fa-utensils"></i>
+          <h3>Donate Food</h3>
+          <p>Help those in need by donating non-perishable food items easily through our platform.</p>
+        </div>
+        <div class="feature-item">
+          <i class="fas fa-tshirt"></i>
+          <h3>Donate Clothes</h3>
+          <p>Share warmth by donating gently-used clothes to underprivileged communities.</p>
+        </div>
+        <div class="feature-item">
+          <i class="fas fa-hand-holding-usd"></i>
+          <h3>Donate Money</h3>
+          <p>Contribute financially with secure online transactions to support our missions.</p>
+        </div>
+        <div class="feature-item">
+          <i class="fas fa-user-shield"></i>
+          <h3>Secure Login</h3>
+          <p>All user accounts are protected with secure login and encryption technologies.</p>
+        </div>
+        <div class="feature-item">
+          <i class="fas fa-users-cog"></i>
+          <h3>User Panel</h3>
+          <p>Manage your donations, view your profile, and track activities with ease.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>Have any questions or suggestions? We'd love to hear from you!</p>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+<footer class="footer">
+  <div class="footer-content">
+    <p>Copyright &copy; 2025 Digital donation. All rights reserved.</p>
+  </div>
+</footer>
+  <script src="script.js" defer></script>
+  
+</body>
+</html>
